@@ -196,8 +196,8 @@ section{padding:110px 0;}
   background:var(--panel); border:1px solid var(--panel-border); border-radius:16px; padding:48px;
   text-align:center; max-width:640px; margin:0 auto;
 }
-.resume-box i{font-size:2.4rem; color:var(--blue-light); margin-bottom:16px;}
-.resume-box p{color:var(--muted); margin-bottom:26px;}
+.resume-box i.icon{font-size:2.4rem; color:var(--blue-light); margin-bottom:16px; display:block;}
+.resume-box p{color:var(--muted); margin:12px 0 26px;}
 
 /* ---------- CONTACT ---------- */
 .contact-grid{display:grid; grid-template-columns:1fr 1.2fr; gap:48px;}
@@ -362,55 +362,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 <section id="resume">
   <div class="wrap">
     <div class="resume-box">
-      <i class="fa-regular fa-file-lines"></i>
+      <i class="fa-regular fa-file-lines icon"></i>
       <h2>Resume</h2>
       <p>Download my resume for a full overview of my education, skills, and projects.</p>
-      <a href="data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFyZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAgL1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdlcyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChcKGFub255bW91c1wpKSAvQ3JlYXRpb25EYXRlIChEOjIwMjYwOTI1MDUzMzE4KzAwJzAwJykgL0NyZWF0b3IgKFwodW5zcGVjaWZpZWRcKSkgL0tleXdvcmRzICgpIC9Nb2REYXRlIChEOjIwMjYwOTI1MDUzMzE4KzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJhcnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKFwodW5zcGVjaWZpZWRcKSkgL1RpdGxlIChcKGFub255bW91c1wpKSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL0NvdW50IDEgL0tpZHMgWyA1IDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKOSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxMzk2Cj4+CnN0cmVhbQpHYXRtO2dOJyZZJjpOLzNvTlNcWjRqLE5hbytcO0JhN0BCWWY4clYkQzBxTzImTjEmJCM0LDVmNSFELSYkYiI5OmcvdEBBUV5SOCpvXTtUb0pxZTN0PmJgOnM7WkltbS1yOnE5SF86UXQrSUljdE40dEE6RyxLJGY5a1RiJVtcWFkkUjBNQygxPThlOWQxJTRlWCY3SU02N3BIKiRuLjtPcVA9IUJrVjEkZzNvRjxRVGZYYT5wajA1SkdWSG8uaXFcb18rRiZGcDx1KEJZXj5GZmFSJTs7T2diXCZgUmBhbVI0cFgjPmMjbk9qS1pIaDBZImheNzc7T1pMYUU6W2ArcCNIZ1lGYFhwX2U4dGVaWFYwUEotTzBraHRALyZQcWkzU19cL2lcI0NdW24+WjpnUDtWJFZoPi9ZK1RaUTNHP1sicmtLKk1cRyNHbF1XSls0U15OcjBwP3FbUF89bWY1TkluPkVsPixtUCp0SG5yXFpxXFspM3JlWEJSUFBjSU1QVSo7ZzFSJiY5ND9FL3UsbzIjXWRhV20uUUYxTEdcI3RyI1dFMnQyXSwvRnBhLlFDS0loSVVGYS9bQzxfSHBIaSQ2ZnJcUTpzQDk9WzFtXVZOMTZ0PkkwSUNfRiFNWUczPmA2RGYsXVQxMUBZL1A9TFFsaDBYU2xXXFNINFhlYkFzPCYkYUF0bXFzYWlGNzhhbD5JbUNyNlgzVz1fcXJFWTNoc28yN3JdRiQ3RTNYKVtNLkg/X0FITU9JKyxIP09mclElJUpXZkM3RHA+YEVPU09fZ1YvRFRYP1ZDNVpSa1YnPDFqXGUnbi0xb1MhOkZSUFQ3MCltQW1pT01rZ2RRKi49QThjP1teWTchWXFbWms+Zi4sVW8mX0BtMVNHJC1QQlNAXlYpOiVtNmo7RSJTXkRgQXJCKGsjITslPDdGPmdaT05dakRMOlksO3JdXW9fQDVMOFJVbSwzPEVbaG4kPENna2NPNTthX2wtMFA6LzdfQ0ZQVWlncyk1SF1jW1NZOl88YmJnK0w6ciVPXWEnPVtMTSVIcEBvOi0wSlRTMlZbPlRmUnE2YEhdYE1TY3EyNkRHWXU/Vjk2UCREdEtkNTA+ZW4nW1lWUSk8QydLY0InVHRQKGoiKWlMclFxXHJMbkEhMzBGMiZOQU5GPUNIYkAlaFQjQ3RBVlwpQkM+Vz86QiojLmpMdFZBbj8tTXFhUTA5bGhDMitQLlVxJkVdWldsN2gyZnBCTD03cllWTUZFInRRakI1a0pePGVdYk4vVk5kPFc7YnBQI1diKGUlLVRJVlN0RF5ucUNPQmMuYiIncWIncl8uXTQoJG89YSI/Qi5yUT91UWhxP0hlR0gvXkklQC9uODNdM1JobE9BPWxgZEohIi81KTpgbE42WWszPjJfXU1eU2wmJHRxRzQ7NT0vTjIjRVAqc01eWDA7dGRtRW8zRGJjSE5hQzBSY21USl5vLE1QSiwkL3AnL2U7JCVcbWlPJCQvPydJI21vSmlrUytIKnRwYUFCTydNQyooaztjVituKCFqdWRsWWMkUGJWWHVAQDs2USkqUFUrNFEuXl9acWF1SCY+Rl5MQG5pJ2djdCNBQ1VgL2BmN3I8dSVqQVUtTFNyblh0Uzdcb1M8YC5ULSRUM0MoK2A6JmY0TVIsYm4uTS1oJkY1PWZzdDwjNF9ROT1hTGwyUGFQMyFEP0NmMzlLYW08YjMlbmNmKEpOR25WOTsvbXUqbl1LPUZNInM+VSVrPFNnKiRbNU5FJVpfXFpxPSsmVUxEbmtrIl1WO25VTkxDZ0FdQWU9S1pWYHNrXCxDKUpnbzNkSmo3IlhoY0tPW1VdMT1aJlQ0SH4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTAKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMTIgMDAwMDAgbiAKMDAwMDAwMDIxOSAwMDAwMCBuIAowMDAwMDAwMzMxIDAwMDAwIG4gCjAwMDAwMDA0NDYgMDAwMDAgbiAKMDAwMDAwMDY0OSAwMDAwMCBuIAowMDAwMDAwNzE3IDAwMDAwIG4gCjAwMDAwMDA5OTcgMDAwMDAgbiAKMDAwMDAwMTA1NiAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzxmMjM2ZGYzZDk3ZTc2YWQ1ZmVjMzg4MTYwM2UwOTZiZT48ZjIzNmRmM2Q5N2U3NmFkNWZlYzM4ODE2MDNlMDk2YmU+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJjZSkKCi9JbmZvIDcgMCBSCi9Sb290IDYgMCBSCi9TaXplIDEwCj4+CnN0YXJ0eHJlZgoyNTQzCiUlRU9GCg==" download="Manne_Lokesh_Resume.pdf" class="btn btn-primary"><i class="fa-solid fa-download"></i><i class="fa-solid fa-download"></i> Download Resume</a>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="tag">Contact</span>
-      <h2>Let's talk</h2>
-      <p>Feel free to reach out — I'm happy to connect about projects, ideas, or opportunities.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-list">
-        <div class="contact-item"><i class="fa-solid fa-phone"></i><div><div class="label">Phone</div><div class="value">+91 77020 94996</div></div></div>
-        <div class="contact-item"><i class="fa-regular fa-envelope"></i><div><div class="label">Email</div><div class="value">24bk1a05h6@stpetershyd.com</div></div></div>
-        <div class="contact-item"><i class="fa-brands fa-github"></i><div><div class="label">GitHub</div><div class="value">mannelokesh-spec</div></div></div>
-        <a href="https://www.linkedin.com/in/mannelokesh" target="_blank" rel="noopener" class="contact-item"><i class="fa-brands fa-linkedin"></i><div><div class="label">LinkedIn</div><div class="value">MANNE LOKESH</div></div></a>
-      </div>
-      <form onsubmit="event.preventDefault(); this.reset(); alert('Thanks! Your message has been noted.');">
-        <input type="text" placeholder="Your name" required>
-        <input type="email" placeholder="Your email" required>
-        <textarea placeholder="Your message" required></textarea>
-        <button type="submit" class="btn btn-primary" style="align-self:flex-start;"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
-        <span class="form-note">This form is a placeholder — connect it to email or a backend later.</span>
-      </form>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="socials">
-      <a href="https://github.com/mannelokesh-spec" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/mannelokesh" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="mailto:24bk1a05h6@stpetershyd.com"><i class="fa-regular fa-envelope"></i></a>
-    </div>
-    &copy; 2026 MANNE LOKESH. All Rights Reserved.
-  </div>
-</footer>
-
-<script>
-const toggle = document.getElementById('navToggle');
-const links = document.getElementById('navLinks');
-toggle.addEventListener('click', () => links.classList.toggle('open'));
-links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
-</script>
-</body>
-</html>
+      <a id="resumeLink" class="btn btn-primary" href="data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAvTmFtZSAvRjEgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iagozIDAgb2JqCjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhLUJvbGQgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YyIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKNCAwIG9iago8PAovQ29udGVudHMgOCAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCA3IDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9QYWdlTW9kZSAvVXNlTm9uZSAvUGFnZXMgNyAwIFIgL1R5cGUgL0NhdGFsb2cKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL0F1dGhvciAoXChhbm9ueW1vdXNcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDI2MTAxMzE2NTI1NiswMCcwMCcpIC9DcmVhdG9yIChcKHVuc3BlY2lmaWVkXCkpIC9LZXl3b3JkcyAoKSAvTW9kRGF0ZSAoRDoyMDI2MTAxMzE2NTI1NiswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChcKHVuc3BlY2lmaWVkXCkpIC9UaXRsZSAoXChhbm9ueW1vdXNcKSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iago3IDAgb2JqCjw8Ci9Db3VudCAxIC9LaWRzIFsgNCAwIFIgXSAvVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjggMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMTk1Ngo+PgpzdHJlYW0KR2F1YFQ5NjZSbiZBSiRDb1AkdE9PcE1RYzRmc1pTOFZxNzZMMjpfLEhsOFtrK3BMTHVKQSdbWk81RCMqYjsjI3JVLXFsbydKTT8hP2JhMzE7IjpfaGYuW0BmJGZMRSsicmAmIyMrRDUmJjwqOylTR1tIJlhdQ24hVShaOSs/b3RDSmZFUTYyWURWVFZoOithPCRyXzloOmwpIiVRM2Vgcl8nPz5zJ2NobD8uMWppRzhWKFJHSSpKcjM5Lz9tJyYjUl5hbHMzb2lAPTgkZm1nbjtAbi82aThpVWxAUWpRSF5GUyUsYyovUVlfPSc/LTNTMi0hXi9hMHQ7ZFsjK2tqZm9fbj5hUzpYQmY/ZlVMNzVsSidfdVVuNTxmLSlbWSVxJEJGXlQ/RTAqImYpVWJwN3NfWENWaz0wNF1eUGZBT21ub1czXGlIISdEXXFhJS8iPiQ2TDZvMkUucytLXVZeYzBLaC5xTCNwOGhGZDAjIzFHKWwxYz5SMDcsWE1lbmZfbC9sQl1FWHAnbHJqUD5aJVhwQTczbUxrK3FkckMwRTJoUjxxM1siW0VkMWVuZSo/UHBgP1RSJWEyOSIyZllOYlY1WVk8NkZqUDssTkJnOSdhOS1IL0ZXRWxRVlY5KWRFYmlAcl4vPTZFJU4qLW9PVEdgVkVNcktbTSZTRF46NzYrcF4hRltEW2hOSzY6OHMsSjInODg0XGM7RENacF5EOVtjODInXUJGMi89MUlYTGFeNEBfayJDa19eTi9LXTZhOiNoakJKJTZMTjBpNF4oLD0sWGM8cWY/LFxXV0lCLVM/VVQsIURkMEtlQ3NXQFVyQ1lDTSpFLU9IOWIlOjBrLWQwSkMtPF9vJSNTN2NWMG5qJWxJbmo0cz4uMil1JDk9UyhbKW1kMzJOTzgtZVFDZDUkSCwsK0A+ayJ1QU9VU05iKFEyZlFSQXRHTCtcZ2xZaixfOExgMVdKKj86SyInaiFqZFFZPkJVWUA4UyxZaWRAKmI2STtzOCViXWMtVTg4UGpZM1wpJGJMVWtnaS5oYidrXjE0Sk9rMVApcypjZEdxXmlZaGdgPV4lXVMyaWRVLFUiQk41Uy0zLGA6Jm5hSnQ/J0s5ZkA8WFZYLCUzayhQcDVFLmVVOiEuIlNdLy8rcF5iSCViUCIlIyZBJHAsP1VwRGVgZ0EnYVolbjQsWmYjJC9cU0xoSDczPCc+SShbLURSNmVgI21JJVVOJDBYcipsPzE8NUtuJW9OJFVLJ01AbTFDIShCUFBKYUZQZC9YJ3FbNzc8JUcxOTBNRmFQO1ZhPmIwSkRSSkJKLFlOTE4r
